@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-webserver
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nodejs-webserver
+  template:
+    metadata:
+      labels:
+        app: nodejs-webserver
+    spec:
+      containers:
+      - name: nodejs-webserver
+        image: marcelohack/nodejs-webserver:latest
+        ports:
+        - containerPort: 3000

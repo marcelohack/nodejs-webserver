@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-webserver",
+  "version": "1.0.0",
+  "description": "A simple Node.js web server application",
+  "main": "src/server.js",
+  "dependencies": {},
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "author": "MARCELO HACK",
+  "license": "MIT"
+}
